@@ -15,6 +15,8 @@
 		837A3A841CCF39CD003C9711 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837A3A821CCF39CD003C9711 /* LaunchScreen.storyboard */; };
 		837A3A8F1CCF39CD003C9711 /* HUDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 837A3A8E1CCF39CD003C9711 /* HUDTests.m */; };
 		837A3A9A1CCF39CD003C9711 /* HUDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 837A3A991CCF39CD003C9711 /* HUDUITests.m */; };
+		837A3AA91CCF3A57003C9711 /* EVHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 837A3AA81CCF3A57003C9711 /* EVHUD.m */; };
+		837A3AB61CCF86F9003C9711 /* MMMaterialDesignSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 837A3AB51CCF86F9003C9711 /* MMMaterialDesignSpinner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		837A3A951CCF39CD003C9711 /* HUDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HUDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		837A3A991CCF39CD003C9711 /* HUDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HUDUITests.m; sourceTree = "<group>"; };
 		837A3A9B1CCF39CD003C9711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		837A3AA71CCF3A57003C9711 /* EVHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVHUD.h; sourceTree = "<group>"; };
+		837A3AA81CCF3A57003C9711 /* EVHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVHUD.m; sourceTree = "<group>"; };
+		837A3AB41CCF86F9003C9711 /* MMMaterialDesignSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMaterialDesignSpinner.h; sourceTree = "<group>"; };
+		837A3AB51CCF86F9003C9711 /* MMMaterialDesignSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMaterialDesignSpinner.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +107,13 @@
 		837A3A731CCF39CD003C9711 /* HUD */ = {
 			isa = PBXGroup;
 			children = (
-				837A3A771CCF39CD003C9711 /* AppDelegate.h */,
-				837A3A781CCF39CD003C9711 /* AppDelegate.m */,
 				837A3A7A1CCF39CD003C9711 /* ViewController.h */,
 				837A3A7B1CCF39CD003C9711 /* ViewController.m */,
+				837A3AA71CCF3A57003C9711 /* EVHUD.h */,
+				837A3AA81CCF3A57003C9711 /* EVHUD.m */,
+				837A3AB41CCF86F9003C9711 /* MMMaterialDesignSpinner.h */,
+				837A3AB51CCF86F9003C9711 /* MMMaterialDesignSpinner.m */,
 				837A3A7D1CCF39CD003C9711 /* Main.storyboard */,
-				837A3A801CCF39CD003C9711 /* Assets.xcassets */,
-				837A3A821CCF39CD003C9711 /* LaunchScreen.storyboard */,
-				837A3A851CCF39CD003C9711 /* Info.plist */,
 				837A3A741CCF39CD003C9711 /* Supporting Files */,
 			);
 			path = HUD;
@@ -117,6 +122,11 @@
 		837A3A741CCF39CD003C9711 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				837A3A801CCF39CD003C9711 /* Assets.xcassets */,
+				837A3A821CCF39CD003C9711 /* LaunchScreen.storyboard */,
+				837A3A851CCF39CD003C9711 /* Info.plist */,
+				837A3A771CCF39CD003C9711 /* AppDelegate.h */,
+				837A3A781CCF39CD003C9711 /* AppDelegate.m */,
 				837A3A751CCF39CD003C9711 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -270,8 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				837A3AB61CCF86F9003C9711 /* MMMaterialDesignSpinner.m in Sources */,
 				837A3A7C1CCF39CD003C9711 /* ViewController.m in Sources */,
 				837A3A791CCF39CD003C9711 /* AppDelegate.m in Sources */,
+				837A3AA91CCF3A57003C9711 /* EVHUD.m in Sources */,
 				837A3A761CCF39CD003C9711 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

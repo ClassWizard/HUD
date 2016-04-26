@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "EVHUD.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) EVHUD *hub;
+@property (weak, nonatomic) IBOutlet UIView *subView;
 
 @end
 
@@ -16,12 +20,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.hub = [EVHUD sharedInstance];
+    self.hub.timerColor = [UIColor colorWithRed:18/255. green:152/255. blue:233/255. alpha:1];
+    self.hub.lineColor = [UIColor colorWithRed:18/255. green:152/255. blue:233/255. alpha:1];
+    self.hub.lineWidth = 4;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)showHUD:(UIButton *)sender {
+//    [self.hub showTips:@"正在结束充电..." withDuration:10 toView:self.view animated:YES completion:^{
+//        NSLog(@"ssss");
+//    }];
+    
+//    [self.hub showTips:@"正在结束..." toView:self.view completion:^{
+//        NSLog(@"dddd");
+//    }];
+    
+    [self.hub showTo:self.subView completion:^{
+        NSLog(@"ffff");
+    }];
 }
 
 @end
